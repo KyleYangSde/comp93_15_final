@@ -1,0 +1,19 @@
+# COMP9315 20T1 Final Exam Q6
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q6
+
+a.
+
+2 node.
+
+b.
+xxx
+we can get results from the condition (A > 40 and B < 'f'),
+and the quadrants are NW,NE-SW,NE-NW,NE-NE,NE-SE.
+
+c.
+There are 4 tuples in the result set.
+Because there are 4 spots in the boundaries.
+
+

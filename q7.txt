@@ -1,0 +1,32 @@
+# COMP9315 20T1 Final Exam Q7
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q7
+
+T1: R(X) W(X)           R(Y)                W(Y)
+T2:           R(Y)           R(X) W(Y)           W(X)
+T3:                R(X)                R(Y)           W(X) W(Y)
+
+
+a. Conflict serializability
+
+
+conflict on Y between T1 and T2: T1 --> T2
+conflict on Y between T1 and T3: T3 --> T1
+conflict on Y between T2 and T3: T2 --> T3
+
+This graph has a cycle T1 --> T2 --> T3 --> T1
+so the schedule is not conflict serializable
+
+
+b.  View serializability
+
+S1 ...
+X first reader T1, last writer T3
+Y first reader T2, last writer T3
+
+There are two options because the T3 should be written last.
+The first is that T1 begins before T2, but R(Y) is in T1 which read before than T2,so that is not feasible
+The second is that T2 begins before T1, but R(X) appears in T2 which read before than T2,so that is also not feasible.
+
+Therefore, there is no view equivalence.

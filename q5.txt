@@ -1,0 +1,17 @@
+# COMP9315 20T1 Final Exam Q5
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q5
+
+a.
+Cost   =   bR + bS *ceil(bR/N-2) = 20 + 100*2 = 220
+
+b.
+Cost = sort(R) + sort(S) + bS + bR
+= 2*100(1+ceil(log19(100/20))) + ceil(2*20*(1+log19(20/20))) + 20 + 100
+= 400+40+20+120 = 560
+
+c.
+cost = 3(bR+ bS) = 3 *120 = 360
+
+

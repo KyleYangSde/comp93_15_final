@@ -1,0 +1,19 @@
+# COMP9315 20T1 Final Exam Q8
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q8
+
+a.
+<start T1>, <start T2>, <T1, X, 5, 6>, <start T3>, <T2, Y, 2, 4>,
+<T1, Y, 2, 3>, <commit T1>, <T2, X, 6, 10>, <abort T2>, <abort T3>
+
+b.
+Because T1 is commited and T2,T3 are not commited,
+T1 is placed on redo lists, T2 and T3 are placed on undo lists
+
+scan backwards through log
+UNDO <T2,X,6,10>, set X to 6 on disk
+UNDO <T2,Y,2,4>, set Y to 2 on disk
+scan forwards through log
+REDO <T1, X, 5, 6>,set X to 6 on disk
+REDO <T1, Y, 2, 3>,set Y to 2 on disk

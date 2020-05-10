@@ -1,0 +1,24 @@
+# COMP9315 20T1 Final Exam Q3
+
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q3
+
+a. 
+first query：4000
+second query：4000
+
+b.
+First query: 
+3996
+Second query: 
+4000
+
+
+c.
+First query: 
+0
+Second query: 
+4000
+
+d.
+pg_class,pg_attribute, pg_type,pg_index

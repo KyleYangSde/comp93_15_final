@@ -1,0 +1,39 @@
+# COMP9315 20T1 Final Exam Q4
+
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q4
+
+a.
+
+c = floor(4096/ 32) = 128
+b = ceil(10000/128) = 79
+
+b.
+
+due to one condition(each page (except the last) is packed with as many tuples as will fit)
+c= floor(4096  / ceil(58/8)) =  512
+b= ceil(10000 / 564 ) =  20
+ 
+c.
+
+because a query like R(?,b,c,d) has exactly 4 genuine matches
+and this query also has exactly 10 false matches (consistent with pF)
+so b = b(signiture)+b(match)+b(false match) = 20 + 4 + 10 =  34
+
+d.
+
+b = b(page) +b(signature) = 79+20 = 99
+
+e.
+
+if we don't know any bits of all these attributes (query signature are 0),
+that means we don't need to read the entire signature files and only read the data pages file.
+ 
+f.
+
+n = 4 (amount of attributes)
+pF = 10/10000 =1/1000
+c = 128
+k  =  ceiling(1/log(e)2 * log(e) ( 1/pF )) = 10
+m  =  ( 1/log(e) 2 )**2* c . n . log(e) ( 1/pF ) = 7362
+ 
